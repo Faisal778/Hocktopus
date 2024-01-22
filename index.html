@@ -1,162 +1,347 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hocktopus</title>
 
     <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- daisy-ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- font-awesome -->
-    <script src="https://kit.fontawesome.com/9f498ab34e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9f498ab34e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- font-family  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
-            font-family: 'Poppins', sans-serif;
-        }
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+        font-family: "Poppins", sans-serif;
+      }
     </style>
+  </head>
 
-</head>
-
-<body class="font-manrope">
+  <body class="font-manrope">
     <header class="w-[85%] mx-auto">
-        <!-- navbar start  -->
-        <nav>
-            <div class="navbar bg-base-100 mt-3 px-0">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0 ml-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16 " />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <a class="text-xl lg:text-2xl font-bold gap-0"><span class="text-[#FF4240]">Hock</span>Topus </a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a class="hover:text-[#FF4240] duration-200" href="#">Home</a></li>
-                        <li><a class="hover:text-[#FF4240] duration-200" href="#">About</a></li>
-                        <li><a class="hover:text-[#FF4240] duration-200" href="#">Pages</a></li>
-                        <li><a class="hover:text-[#FF4240] duration-200" href="#">Blog</a></li>
-                        <li><a class="hover:text-[#FF4240] duration-200" href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <i class="fa-solid fa-magnifying-glass hidden lg:flex mr-4"></i>
-                    <a
-                        class="btn h-[85%] w-[140px] text-sm px-4 py-0 bg-[#FF4240] text-white font-semibold animate-pulse  hover:text-[#FF4240] hover:bg-transparent hover:duration-300">Get
-                        Ticket</a>
-                </div>
+      <!-- navbar start  -->
+      <nav>
+        <div class="navbar bg-base-100 mt-3 px-0 lg:pb-10">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden pl-0 ml-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16 "
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
             </div>
-        </nav>
+            <a class="text-xl lg:text-2xl font-bold gap-0"
+              ><span class="text-[#FF4240]">Hock</span>Topus
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a class="hover:text-[#FF4240] duration-200" href="#">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FF4240] duration-200" href="#">About</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FF4240] duration-200" href="#">Pages</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FF4240] duration-200" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FF4240] duration-200" href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i class="fa-solid fa-magnifying-glass hidden lg:flex mr-4"></i>
+            <a
+              class="btn h-[85%] w-[140px] text-sm px-4 py-0 bg-[#FF4240] text-white font-semibold animate-pulse hover:text-[#FF4240] hover:bg-transparent hover:duration-300"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
 
-        <!-- navbar end  -->
+      <!-- navbar end  -->
 
-        <!-- banner section start -->
-        <section>
-            <div class="carousel w-full max-h-fit md:max-h-[550px] rounded-lg pt-10 relative ">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img class=" w-[100%] object-cover rounded-lg" src="Images/1.png" class="w-full" />
+      <!-- banner section start -->
+      <section>
+        <div
+          class="carousel w-full max-h-fit md:max-h-[550px] rounded-lg relative"
+        >
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              class="w-[100%] object-cover rounded-lg"
+              src="Images/1.png"
+              class="w-full"
+            />
 
-                    <div
-                        class=" w-[70%]  lg:w-[45%]  mr-4 rounded-lg absolute text-white bg-black p-4  hidden md:flex md:flex-col translate-x-1/3 -translate-y-1/3 top-[75%] lg:right-[20%]">
-                        <h5 class=" md:text-sm md:font-medium text-base font-semibold">Meet
-                            all the heroes from the
-                            field</h5>
-                        <p class="md:text-xs text-sm">Encounter heroes across diverse fields, each a beacon of inspiration.
-                        </p>
-                    </div>
+            <div
+              class="w-[70%] lg:w-[45%] mr-4 rounded-lg absolute text-white bg-black p-4 hidden md:flex md:flex-col translate-x-1/3 -translate-y-1/3 top-[80%] lg:right-[20%]"
+            >
+              <h5 class="md:text-sm md:font-medium text-base font-semibold">
+                Meet all the heroes from the field
+              </h5>
+              <p class="md:text-xs text-sm">
+                Encounter heroes across diverse fields, each a beacon of
+                inspiration.
+              </p>
+            </div>
 
-                    <div
-                        class="absolute flex justify-left items-baseline transform -translate-y-1/3 top-[85%] left-[5%] right-5">
-                        <a href="#slide4" class="btn btn-circle w-8 bg-opacity-50 text-black border-none"">❮</a>
-                            <a href=" #slide2" class="btn btn-circle w-8 bg-opacity-50 text-black border-none"">❯</a>
-                        </div>
-                    </div>
-                    <div id=" slide2" class="carousel-item relative w-full">
-                            <img class=" w-[100%] object-cover rounded-lg" src="Images/2.png" class="w-full" />
-                            <div
-                                class="absolute flex justify-left items-baseline transform -translate-y-1/3 top-[85%] left-[5%] right-5">
-                                <a href="#slide1" class="btn btn-circle w-8 bg-opacity-50 text-black border-none"">❮</a>
-                            <a href=" #slide3" class="btn btn-circle w-8 bg-opacity-50 text-black border-none"">❯</a>
-                        </div>
-                    </div>
-                    <div id=" slide3" class="carousel-item relative w-full">
-                                    <img class=" w-[100%] object-cover rounded-lg" src="Images/3.png" class="w-full" />
-                                    <div
-                                        class="absolute flex justify-left items-baseline transform -translate-y-1/3 top-[85%] left-[5%] right-5">
-                                        <a href="#slide2"
-                                            class="btn btn-circle w-8 bg-opacity-50 text-black border-none"">❮</a>
-                            <a href=" #slide4" class="btn btn-circle w-8 bg-opacity-50 text-black border-none"">❯</a>
-                        </div>
-                    </div>
-                    <div id=" slide4" class="carousel-item relative w-full">
-                                            <img class=" w-[100%] object-cover rounded-lg relative" src="Images/4.png"
-                                                class="w-full" />
+            <div
+              class="absolute flex justify-left items-baseline transform -translate-y-1/3 top-[85%] left-[5%] right-5"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle w-8 bg-opacity-50 text-black border-none"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle w-8 bg-opacity-50 text-black border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              class="w-[100%] object-cover rounded-lg"
+              src="Images/2.png"
+              class="w-full"
+            />
 
-                                            <div
-                                                class="absolute flex justify-left items-baseline transform -translate-y-1/3 top-[85%] left-[5%] right-5 ">
-                                                <a href="#slide3"
-                                                    class="btn btn-circle w-8 bg-opacity-50 text-black border-none">❮</a>
-                                                <a href="#slide1"
-                                                    class="btn btn-circle w-8 bg-opacity-50 text-black border-none">❯</a>
-                                            </div>
-                                    </div>
-                            </div>
+            <div
+              class="w-[70%] lg:w-[45%] mr-4 rounded-lg absolute text-white bg-black p-4 hidden md:flex md:flex-col translate-x-1/3 -translate-y-1/3 top-[80%] lg:right-[20%]"
+            >
+              <h5 class="md:text-sm md:font-medium text-base font-semibold">
+                Dive into a panorama of excellence
+              </h5>
+              <p class="md:text-xs text-sm">
+                forge connections with champions from various fields, each a
+                testament to the pursuit of greatness.
+              </p>
+            </div>
 
-        </section>
+            <div
+              class="absolute flex justify-left items-baseline transform -translate-y-1/3 top-[85%] left-[5%] right-5"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle w-8 bg-opacity-50 text-black border-none"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle w-8 bg-opacity-50 text-black border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              class="w-[100%] object-cover rounded-lg"
+              src="Images/3.png"
+              class="w-full"
+            />
 
-        <!-- banner section end  -->
+            <div
+              class="w-[70%] lg:w-[45%] mr-4 rounded-lg absolute text-white bg-black p-4 hidden md:flex md:flex-col translate-x-1/3 -translate-y-1/3 top-[80%] lg:right-[20%]"
+            >
+              <h5 class="md:text-sm md:font-medium text-base font-semibold">
+                Enter the realm of distinction
+              </h5>
+              <p class="md:text-xs text-sm">
+                encounter trailblazers in diverse fields, each a living
+                testament to resilience, passion, and achievement.
+              </p>
+            </div>
+            <div
+              class="absolute flex justify-left items-baseline transform -translate-y-1/3 top-[85%] left-[5%] right-5"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle w-8 bg-opacity-50 text-black border-none"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle w-8 bg-opacity-50 text-black border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              class="w-[100%] object-cover rounded-lg relative"
+              src="Images/4.png"
+              class="w-full"
+            />
+
+            <div
+              class="w-[70%] lg:w-[45%] mr-4 rounded-lg absolute text-white bg-black p-4 hidden md:flex md:flex-col translate-x-1/3 -translate-y-1/3 top-[80%] lg:right-[20%]"
+            >
+              <h5 class="md:text-sm md:font-medium text-base font-semibold">
+                Uncover the mosaic of brilliance
+              </h5>
+              <p class="md:text-xs text-sm">
+                meet luminaries across diverse fields, each painting strokes of
+                inspiration on the canvas of accomplishment.
+              </p>
+            </div>
+            <div
+              class="absolute flex justify-left items-baseline transform -translate-y-1/3 top-[85%] left-[5%] right-5"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle w-8 bg-opacity-50 text-black border-none"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle w-8 bg-opacity-50 text-black border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner section end  -->
     </header>
-    <div class=" w-[85%] mx-auto mt-4 md:hidden rounded-lg  text-white bg-black p-4">
-        <h5 class="text-base font-semibold">Meet all the heroes from the
-            field</h5>
-        <p class="text-sm">Encounter heroes across diverse fields, each a beacon of inspiration. </p>
+    <div
+      class="w-[85%] mx-auto mt-4 md:hidden rounded-lg text-white bg-black p-4"
+    >
+      <h5 class="text-base font-semibold">
+        Meet all the heroes from the field
+      </h5>
+      <p class="text-sm">
+        Encounter heroes across diverse fields, each a beacon of inspiration.
+      </p>
     </div>
 
     <main class="w-[85%] mx-auto">
-        <!-- professional hockey club section start  -->
-        <section>
-            <div class="text-center mx-auto my-14 space-y-2">
-                <h3 class="text-xl font-semibold">Professional Hockeys
-                    Club</h3>
-                <p class=" text-sm opacity-85 mx-auto lg:w-[60%]">Elite
-                    athletes dominating the field with precision and
-                    strategy in the world of professional hockey. Unmatched
-                    prowess and sportsmanship define our winning
-                    legacy.</p>
-            </div>
-        </section>
+      <!-- professional hockey club section start  -->
+      <section class="my-14 border-dashed border-y-2 border-[#13131833]">
+        <div class="text-center mx-auto space-y-2 my-6">
+          <h3 class="text-xl font-semibold">Professional Hockeys Club</h3>
+          <p class="text-sm opacity-85 mx-auto lg:w-[60%]">
+            Elite athletes dominating the field with precision and strategy in
+            the world of professional hockey. Unmatched prowess and
+            sportsmanship define our winning legacy.
+          </p>
+        </div>
+      </section>
 
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-4"
+      >
+        <div class="space-y-2 mb-4">
+          <div
+            class="radial-progress text-orange-400"
+            style="--value: 87;"
+            role="progressbar"
+          >
+            87%
+          </div>
+          <h4 class="text-base font-medium">Player Facility</h4>
+          <p class="font-light text-xs w-[70%] mx-auto">
+            At our prayer facility, find solace and serenity, a sacred space for
+            reflection and connection.
+          </p>
+        </div>
+        <div class="space-y-2 mb-4">
+          <div
+            class="radial-progress text-green-400"
+            style="--value: 95;"
+            role="progressbar"
+          >
+            95%
+          </div>
+          <h4 class="text-base font-medium">Experienced Coach</h4>
+          <p class="font-light text-xs w-[70%] mx-auto">
+            An experienced coach guides the club with seasoned wisdom, shaping
+            success on and off the field.
+          </p>
+        </div>
+        <div class="space-y-2 mb-4">
+          <div
+            class="radial-progress text-yellow-300"
+            style="--value: 90;"
+            role="progressbar"
+          >
+            90%
+          </div>
+          <h4 class="text-base font-medium">Senior Player</h4>
+          <p class="font-light text-xs w-[70%] mx-auto">
+            senior player as a guide brings invaluable experience and mentorship
+            to the club's aspiring talents.
+          </p>
+        </div>
+        <div class="space-y-2 mb-4">
+          <div
+            class="radial-progress text-blue-500"
+            style="--value: 80;"
+            role="progressbar"
+          >
+            80%
+          </div>
+          <h4 class="text-base font-medium">Training Ground</h4>
+          <p class="font-light text-xs w-[70%] mx-auto">
+            At the club's training ground, excellence is cultivated through
+            cutting-edge facilities.
+          </p>
+        </div>
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
