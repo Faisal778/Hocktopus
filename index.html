@@ -446,28 +446,71 @@
             </section>
             <!-- contact grid  -->
             <section>
-                <div>
-                    <div class = "grid grid-cols-1 gap-2 border-2 border-[#1313181A] rounded-lg p-4">
-                        <div class = "bg-[#BCED6D1A] min-h-28 p-4 rounded-lg">
-                            <img src="Images/Group 1171275317.png" alt="">
-                            <p class = "text-xs font-light">Phone Number :</p>
-                            <p class = "text-sm font-bold">+8801878553064</p>
-                        </div>
-                        <div class = "bg-[#FDDD5F1A] min-h-28 p-4 rounded-lg">
-                            <img src="Images/Group 1171275318.png" alt="">
-                            <p class = "text-xs font-light">Email :</p>
-                            <p class = "text-sm font-bold">faisalmahmud778@gmail.com</p>
-                        </div>
-                        <div class = "bg-[#629CF31A] min-h-28 p-4 rounded-lg">
-                            <img src="Images/Group 1171275321.png" alt="">
-                            <p class = "text-xs font-light">Location :</p>
-                            <p class = "text-sm font-semibold">Bashundhara R/A, Dhaka</p>
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="lg:w-[70%]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2 border-2 border-[#1313181A] rounded-lg p-4">
+                            <div class="bg-[#BCED6D1A] min-h-28 p-8 rounded-lg">
+                                <img src="Images/Group 1171275317.png" alt="" />
+                                <p class="text-xs font-light">Phone Number :</p>
+                                <p class="text-sm font-bold">+8801878553064</p>
+                            </div>
+                            <div class="bg-[#FDDD5F1A] min-h-28 p-8 rounded-lg">
+                                <img src="Images/Group 1171275318.png" alt="" />
+                                <p class="text-xs font-light">Email :</p>
+                                <p class="text-sm font-bold">faisalmahmud778@gmail.com</p>
+                            </div>
+                            <div class="bg-[#629CF31A] min-h-28 p-8 rounded-lg md:col-span-2 md:text-center lg:text-left lg:col-span-1">
+                                <img class="md:mx-auto lg:mx-0 pb-2" src="Images/Group 1171275321.png" alt="" />
+                                <p class="text-xs font-light">Location :</p>
+                                <p class="text-sm font-semibold">Bashundhara R/A, Dhaka</p>
+                            </div>
                         </div>
                     </div>
 
-
-                    <div>
-
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:w-full">
+                        <div>
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text text-base font-semibold">Your Name</span>
+                                </div>
+                                <input type="text" placeholder="Enter your full name" class="input bg-[#13131808] w-full max-w-xs" />
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text text-base font-semibold">Your Email</span>
+                                </div>
+                                <input type="text" placeholder="Enter your email" class="input bg-[#13131808] w-full max-w-xs" />
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text text-base font-semibold">Subject</span>
+                                </div>
+                                <input type="text" placeholder="Enter your subject" class="input bg-[#13131808] w-full max-w-xs" />
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text text-base font-semibold">Phone Number</span>
+                                </div>
+                                <input type="text" placeholder="Enter your phone number" class="input bg-[#13131808] w-full max-w-xs" />
+                            </label>
+                        </div>
+                        <div class="grid col-span-1 lg:col-span-2">
+                            <label class="form-control">
+                                <div class="label">
+                                    <span class="label-text text-base font-semibold">Message</span>
+                                </div>
+                                <textarea placeholder="Write your message" class="textarea bg-[#13131808] min-h-40"></textarea>
+                            </label>
+                        </div>
+                        <div class="text-center grid col-span-1 lg:col-span-2">
+                            <button class="bg-[#FF4240] rounded-md p-2 w-full text-white font-semibold">Register Now!</button>
+                        </div>
                     </div>
                 </div>
             </section>
